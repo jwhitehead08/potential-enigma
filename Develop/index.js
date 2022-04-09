@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const writeFile = require('./utils/generateMarkdown');
+const writeFile = require('./utils/generate');
 
 // TODO: Create an array of questions for user input
 const promptUser = userData => {
@@ -35,7 +35,7 @@ const promptUser = userData => {
             type: 'list',
             name: 'license',
             message: 'What license(s) did you use with this project? (Check all that apply)',
-            choices: ['MIT','ISC','GPL','APACHE2.0', 'PRIVATE', 'Other']
+            choices: ['MIT','ISC','GPL','APACHE2.0']
           },
         {
             type: 'input',
