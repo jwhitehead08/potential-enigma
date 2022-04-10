@@ -1,37 +1,34 @@
 
-# title pro
-## descript
+# Dogs!
+## Description: This is project about dogs. Enjoy!
 ### Table of Contents
 * [installation](#installation)
 * [license](#license)
 * [usage](#usage)
 * [contribution](#contribution)
 * [test](#test)
-* [email](#email)
-* [github](#github)
+* [questions](#questions)
 
 
 #### Installation
-undefined
+These are the instructions...
 
 #### License
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![License] (https://img.shields.io/badge/license-MIT-green.svg)
 
 #### Usage
-usage info
+More information, here you go.
 
 #### Contribution
-use it
+You should really contribute responsibly.
 
 #### Test
-test it
+Test in jest, please.
 
-#### Email
-jwhitehead
-<jwhitehead>
+#### Questions
+Contact me with any questions at: jwhitehead08@gmail.com
 
-#### Github
-jwhitehead08
-[Github](https://github.com/jwhitehead08)
+Github: gitjeff
+[Github](https://github.com/gitjeff)
 
         

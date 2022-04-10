@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const writeFile = require('./utils/generate');
+const writeFile = require('./utils/generatemarkdown');
 
 // TODO: Create an array of questions for user input
 const promptUser = userData => {
@@ -35,7 +35,7 @@ const promptUser = userData => {
             type: 'list',
             name: 'license',
             message: 'What license(s) did you use with this project? (Check all that apply)',
-            choices: ['MIT','ISC','GPL','APACHE2.0']
+            choices: ['MIT','ISC','GPL']
           },
         {
             type: 'input',
@@ -118,6 +118,7 @@ const promptUser = userData => {
       ]);
     };
     
+
     
     
     promptUser()
@@ -125,19 +126,18 @@ const promptUser = userData => {
         console.log(data);
         const contentFile = `
 # ${data.title}
-## ${data.description}
+## Description: ${data.description}
 ### Table of Contents
 * [installation](#installation)
 * [license](#license)
 * [usage](#usage)
 * [contribution](#contribution)
 * [test](#test)
-* [email](#email)
-* [github](#github)
+* [questions](#questions)
 
 
 #### Installation
-${data.installInstruc}
+${data.intallInstruc}
 
 #### License
 ![License] (https://img.shields.io/badge/license-${data.license}-green.svg)
@@ -151,12 +151,10 @@ ${data.contribution}
 #### Test
 ${data.test}
 
-#### Email
-${data.email}
-<${data.email}>
+#### Questions
+Contact me with any questions at: ${data.email}
 
-#### Github
-${data.github}
+Github: ${data.github}
 [Github](https://github.com/${data.github})
 
         `
